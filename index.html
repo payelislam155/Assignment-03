@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+     <link rel="stylesheet" href="style.css">
      <!-- Google Font Link -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
              theme: {
                  extend: {
                      colors: {
-                         secondary: 'rgb(171, 239, 95)',
+                         secondary:'rgb(171, 239, 95)',
                          body: 'rgb(248, 246, 243)',
                          accent: 'rgb(106, 151, 57)',
                          body_neutral: 'rgb(51, 51, 51)',
@@ -34,7 +35,7 @@
                      backgroundImage: {
                          leaf1: "url('./images/leaf01.png')",
                          call_to_action: "url('./images/call.jpg')",
-                         testimonials: "url('./images/testimonials.jpg')",
+                         testimonials: "url('./img/bg.jpg')",
                      },
                  },
              },
@@ -144,7 +145,7 @@
                       </div>
             </section>
                         <!-- work process section -->
-            <section class="w-[78%] mx-auto mt-4">
+            <section class="w-10/12 mx-auto mt-4">
                      <div class="space-y-8">
                            <div class="text-center space-y-4">
                             <button class="btn bg-white font-bold px-8 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>How we works</button>
@@ -175,9 +176,31 @@
                            </div>
                      </div>
             </section>
+                    <!-- discuss section start -->
+            <section class="bg-image mt-4">
+                    <div class="p-6">
+                         <div class="text-center space-y-3">
+                              <button class="btn bg-white font-bold px-8 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>How we works</button>
+                              <h1 class="text-4xl font-bold">Our Works Process</h1>
+                              <p>The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+                         </div>
+                         <div class="flex justify-center items-center">
+                              <div class="lg:col-span-2 p-6">
+                                  <div class="grid grid-cols-1 lg:grid-cols-2 lg:w-[800px] w-80 gap-3">
+                                          <input class="mt-2 p-2 border-none outline-none bg-slate-100 rounded-3xl w-full" type="text" placeholder="First Name*">
+                                          <input class="mt-2 p-4 border-none outline-none bg-slate-100 rounded-3xl w-full" type="text" placeholder="Last Name*">
+                                          <input class="mt-2 p-4 border-none outline-none bg-slate-100 rounded-3xl w-full" type="text" placeholder="Phone Number*">
+                                          <input class="mt-2 p-4 border-none outline-none bg-slate-100 rounded-3xl w-full" type="text" placeholder="Email Number*">
+                                        <div class="lg:col-span-2">
+                                              <textarea rows="5" class="max-lg mt-2 p-4 border-none outline-none bg-slate-100 rounded-lg w-full" type="text" placeholder="Write your message here" name="" id=""></textarea>
+                                        </div>
+                                        <button class="btn btn bg-secondary border-none hover:bg-primary lg:col-span-2 text-black font-bold">Send Mail <i class="fa-solid fa-arrow-right text-white bg-black rounded-full p-1 -rotate-45"></i></button>
+                                  </div>
+                              </div>               
+                         </div>  
+                    </div>
+            </section>
       </main>
-      <!-- <section class="h-[400px]">
-                      
-      </section> -->
+     
 </body>
 </html>
