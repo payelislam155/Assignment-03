@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+     <!-- Google Font Link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <!-- tailwind css & DaisyUI Links -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+ 
+     <!-- Font awesome CDN link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Tailwind CSS Configuration -->
+     <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         secondary: 'rgb(171, 239, 95)',
+                         body: 'rgb(248, 246, 243)',
+                         accent: 'rgb(106, 151, 57)',
+                         body_neutral: 'rgb(51, 51, 51)',
+                         black:'rgb(33, 33, 33)'
+                     },
+                     fontFamily: {
+                        Manrope: 'Manrope',
+                     },
+                     backgroundImage: {
+                         leaf1: "url('./images/leaf01.png')",
+                         call_to_action: "url('./images/call.jpg')",
+                         testimonials: "url('./images/testimonials.jpg')",
+                     },
+                 },
+             },
+         }
+     </script>
+</head>
+<body class="text-Manrope">
+                    <!-- header section start -->
+      <header class="w-11/12 mx-auto">
+                        <!-- navbar section start -->
+             <nav>
+          <div class="navbar p-0 py-2">
+             <div class="navbar-start">
+             <a class="flex justify-center items-center gap-2">
+                   <i class="fa-solid fa-arrow-right bg-secondary rounded-full p-1.5 -rotate-45"></i>
+                   <span class="text-2xl font-bold">Rinterio</span>
+             </a>
+           </div>
+           <div class="navbar-center hidden lg:flex">
+             <ul class="menu menu-horizontal px-1 text-lg">
+               <li class="font-medium hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Services</a></li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+               <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+             </ul>
+           </div>
+           <div class="navbar-end">
+                <div>
+                     <button class="flex items-center gap-4 font-semibold invisible lg:visible text-accent">
+                             <i class="fa-solid fa-magnifying-glass text-slate-400 bg-blue-200 p-1.5 rounded-full"></i>
+                             <i class="fa-solid fa-cart-shopping text-black bg-blue-200 p-1.5 rounded-full"></i>
+                             <div class="bg-secondary text-black font-bold px-3 py-1 rounded-2xl">
+                                  <span>Book Consult</span>
+                                  <i class="fa-solid fa-arrow-right text-white bg-black rounded-full p-1 -rotate-45"></i>
+                             </div>
+                     </button>
+                </div>
+                 <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-slate-400 rounded-full text-lg">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                 tabindex="0"
+                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] right-0 gap-5 mt-3 w-52 p-2 shadow">
+                 <li class="font-medium hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                 <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything</a></li>
+                 <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Groceries</a></li>
+                 <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
+                 <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contack</a></li>
+                    </ul>
+                 </div>
+           </div>
+          </div>
+            </nav>
+                        <!-- banner section start -->
+            <section class="grid grid-rows-1 text-center space-y-2">
+                     <div class="flex justify-center items-cen">
+                          <img class="w-80" src="img/banner.png" alt="">
+                     </div>
+                     <div class="space-y-6">
+                          <h1 class="text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                          <p class="t">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                          <div>
+                                <button class="text-xl font-bold bg-secondary px-4 py-1 rounded-3xl opacity-90">View Details
+                                     <i class="fa-solid fa-arrow-right bg-lime-500 rounded-full p-1.5 -rotate-45"></i>
+                               </button>        
+                          </div>
+                     </div>
+            </section>
+      </header>
+</body>
+</html>
